@@ -71,6 +71,7 @@
         setTimeout(() => {
             document.addEventListener('keydown',(e)=>{
                 const firstElem = document.querySelector('.createloc > div');
+                
                 if(firstElem.className === 'standard0'){
                     if(e.code === 'ArrowLeft'){
                         scorecheck();
@@ -92,7 +93,7 @@
     }
 
     function scorecheck(){
-        if(score < 0)score=0;        
+        if(score < 0)score=0;
     }
 
 
@@ -155,18 +156,7 @@
         combo = 0;
         score-=1000;
         document.querySelector('.combo').innerHTML = "";
-        
-    }
-
-    function scoreAnimateRed(){
-        $('.scoreresult').animate({
-
-        });
-    }
-    function scoreAnimateBlack(){
-        $('.scoreresult').animate({
-
-        });
+        console.log('reset');
     }
 
 
@@ -191,13 +181,12 @@
             document.querySelector('.timer > p').style.color = "red";
         }
         if(gametime==-1){
-            document.querySelector('.gameendmessage').style.display='block';
+            document.querySelector('.gameendmessage').style.display='flex';
             setTimeout(() => {
                 clearInterval(gametumercnt);
             }, 100);
         }
         gameEndMessage();
-        clearInterval(game());
     }
 
     function gameEndMessage(){
