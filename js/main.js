@@ -1,7 +1,7 @@
 
     const array = new Array(10); // 배열 선언
     let timecnt = 3;
-    let gametime = 60;
+    let gametime = 30;
     time();
     startgame();
     //startgame(); function은 자동 실행되지 않음
