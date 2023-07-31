@@ -1,0 +1,41 @@
+@font-face {font-family: 'Maplestory Light'; font-style: normal; font-weight: 300; src: url(../font/Maplestory\ Light.ttf);}
+@font-face {font-family: 'Maplestory Bold'; font-style: normal; font-weight: 300; src: url(../font/Maplestory\ Bold.ttf);}
+*{font-family: 'Maplestory Light'; font-style: normal;}
+.wrap{width: 720px; max-height: 100%;}
+.cloud{background-color: #000; opacity: 70%; width:100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 9999; text-align: center;}
+.cloud > .startcnt{ font-size: 164px; color: #fff; margin: calc(50% + 82px) 0;}
+/* .divwrap{position: fixed; background: url(../Img/mainbg.png) no-repeat top center/cover; width: 100%; height: 100%;} */
+.divwrap{position: fixed; background:#fff; width: 100%;}
+
+.createloc{ display: flex; flex-wrap: wrap-reverse; width:106px; margin: 0 auto; overflow: hidden; height: 600px;}
+.standard0{ background: url(../Img/orangeBtn.png) no-repeat top center/cover; width: 86px; height:86px; margin: -30px 0 0 0;}
+.standard1{ background: url(../Img/blueBtn.png) no-repeat top center/cover; width: 86px; height:86px; margin: -30px 0 0 0;}
+
+.createloc :nth-child(10) {opacity: 0;}
+.createloc :nth-child(1) {z-index: 11;}
+.createloc :nth-child(2) {z-index: 10; transform: scale(0.95); margin-top:-35px;}
+.createloc :nth-child(3) {z-index:9; transform: scale(0.9); margin-top:-39px;}
+.createloc :nth-child(4) {z-index:8; transform: scale(0.8); margin-top:-50px;}
+.createloc :nth-child(5) {z-index:7; transform: scale(0.75); margin-top:-56px;}
+.createloc :nth-child(6) {z-index:6; transform: scale(0.67); margin-top:-67px;}
+.createloc :nth-child(7) {z-index:5; transform: scale(0.59); margin-top:-75px;}
+.createloc :nth-child(8) {z-index:4; transform: scale(0.54); margin-top:-75px;}
+.createloc :nth-child(9) {z-index:3; transform: scale(0.5); margin-top:-85px;}
+
+
+.classcomp {position: relative; width: 720px;}
+.classcomp button{ position: fixed; top: 560px; width: 110px; height: 110px;}
+.classcomp button:first-child {left:10px; background: url(../Img/left_arrow.png) no-repeat top center/cover; bottom: 40px;}
+.classcomp button:nth-child(2) {right:10px; background: url(../Img/right_arrow.png) no-repeat top center/cover; bottom: 40px;}
+.classcomp .standard2{ position: fixed; left:10px; background: url(../Img/orangeBtn.png) no-repeat top center/cover; width: 76px; height: 76px; top:400px}
+.classcomp .standard3{ position: fixed; right:10px; background: url(../Img/blueBtn.png) no-repeat top center/cover; width: 76px; height: 76px; top:400px}
+
+.score{position: fixed; top: 15px; left: calc(20% - 80px); width: 160px; height: 80px; color: #444444; text-align: center;}
+.score p{font-size: 25px; }
+.timer{ position: fixed; bottom: 0px; right: calc(50% - 75px); width: 150px; height: 80px; color: #444444; text-align: center;}
+.timer p{font-size: 45px; }
+.combo{z-index: 50; font-family: 'Maplestory Bold'; font-style: normal; position: fixed; top: 185px; left: calc(50% - 170px); width: 340px; height: 30px; text-align: center; font-size: 55px; color: #aaaaaa; text-shadow: -1px 0 #1f0a43, 0 1px #1f0a43, 1px 0 #1f0a43, 0 -1px #1f0a43;}
+.gameendmessage{z-index: 99; display: none; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background-color: #222; opacity: 85%; text-align: center;}
+.gameendmessage_btn{ position: absolute; bottom: 200px; left: calc(50% - 160px); width: 320px; height: 50px; font-size: 72px; text-shadow: -4px 0 #fff, 0 4px #fff, 4px 0 #fff, 0 -4px #fff;}
+.gameendmessage_max{ position: absolute; top: 200px; left: calc(50% - 160px); width: 320px; height: 50px; font-size: 72px; text-shadow: -4px 0 #fff, 0 4px #fff, 4px 0 #fff, 0 -4px #fff; color:#d71b93;}
+.gameendmessage_score{ position: absolute; top: 300px; left: calc(50% - 160px); width: 320px; height: 50px; font-size: 72px; text-shadow: -4px 0 #fff, 0 4px #fff, 4px 0 #fff, 0 -4px #fff; color:#d71b93;}
