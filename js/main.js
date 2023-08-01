@@ -92,11 +92,6 @@
         }, 3000);
     }
 
-    function scorecheck(){
-        if(score < 0)score=0;
-    }
-
-
     function startgame(){  // 게임 시작 시 생성되는 배열
         for(let i=0; i<array.length; i++){
             let randomnum = Math.floor(Math.random()*2);
@@ -150,13 +145,45 @@
         if(combo>=2){
             document.querySelector('.combo').innerHTML = combo + " Combo !";
         }
+        comboPlusanimate();
     }
 
     function comboreset(){
         combo = 0;
-        score-=1000;
+        scoreMinus();
         document.querySelector('.combo').innerHTML = "";
         console.log('reset');
+    }
+
+    function scoreMinus(){
+        score-=1000;
+        scoreMinusanimate();
+        scorecheck();
+        document.querySelector('.scoreresult').innerHTML = score+"점";
+    }
+
+    function scorecheck(){
+        if(score < 0)score=0;
+    }
+
+    function scoreMinusanimate(){
+        document.querySelector('.scoreresult').animate([
+            {scale : 1.5, color: '#ff2222'},
+            {scale : 1.7, color: '#ff2222'},
+            {scale : 1.0, color: '#222222'}
+        ],400);
+    }
+    function timeoutanimate(){
+        document.querySelector('.timerresult').animate([
+            {scale : 1.5, opacity: 0.5},
+            {scale : 1.0, opacity: 1.0}
+        ],400);
+    }
+    function comboPlusanimate(){
+        document.querySelector('.combo').animate([
+            {scale : 1.2,},
+            {scale : 1.0,}
+        ],300);
     }
 
 
@@ -177,8 +204,9 @@
         document.querySelector('.timerresult').innerHTML = gametime+"초";
         gametime--;
         let gametumercnt = setTimeout(gametimer, 1000);
-        if(gametime<11){
+        if(gametime<10){
             document.querySelector('.timer > p').style.color = "red";
+            timeoutanimate();
         }
         if(gametime==-1){
             document.querySelector('.gameendmessage').style.display='flex';
