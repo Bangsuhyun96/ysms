@@ -168,11 +168,18 @@
 
     function scoreMinusanimate(){
         document.querySelector('.scoreresult').animate([
+            {scale : 1.1, color: '#ff2222'},
+            {scale : 1.2, color: '#ff2222'},
+            {scale : 1.4, color: '#ff2222'},
             {scale : 1.5, color: '#ff2222'},
-            {scale : 1.7, color: '#ff2222'},
+            {scale : 1.4, color: '#ff2222'},
+            {scale : 1.3, color: '#ff2222'},
+            {scale : 1.2, color: '#ff2222'},
+            {scale : 1.1, color: '#ff2222'},
             {scale : 1.0, color: '#222222'}
         ],400);
     }
+
     function timeoutanimate(){
         document.querySelector('.timerresult').animate([
             {scale : 1.5, opacity: 0.5},
