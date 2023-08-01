@@ -20,6 +20,7 @@
 .createloc :nth-child(7) {z-index:5; transform: scale(0.59); margin-top:-75px;}
 .createloc :nth-child(8) {z-index:4; transform: scale(0.54); margin-top:-75px;}
 .createloc :nth-child(9) {z-index:3; transform: scale(0.5); margin-top:-85px;}
+.fever{ background-color: #222;}
 
 .classcomp {position: relative; width: 100%; display: flex; flex-wrap: wrap; justify-content: space-around; max-width: 720px; margin: 70px 0;}
 .classcomp .standard2{ width: 46px; height: 46px; border-left: solid 7px #ff4081; border-bottom: solid 7px #ff4081; transform: rotate(45deg);}
