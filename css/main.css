@@ -8,8 +8,8 @@
 .divwrap{position: fixed; background:#fff; width: 100%; max-width: 720px;}
 
 .createloc{ display: flex; flex-wrap: wrap-reverse; width:106px; margin: 0 auto; overflow: hidden; height: 600px;}
-.standard0{ background: url(../Img/greenone.png) no-repeat top center/cover; width: 86px; height:86px; margin: -30px 0 0 0;}
-.standard1{ background: url(../Img/greentwo.png) no-repeat top center/cover; width: 86px; height:86px; margin: -30px 0 0 0; }
+.standard0{ background: #ff4081; width: 86px; height:86px; margin: -30px 0 0 0; border-radius:50%;}
+.standard1{ background: #2962ff; width: 86px; height:86px; margin: -30px 0 0 0; border-radius:50%;}
 
 .createloc :nth-child(10) {opacity: 0;}
 .createloc :nth-child(1) {z-index: 11;}
@@ -24,8 +24,8 @@
 
 
 .classcomp {position: relative; width: 100%; display: flex; flex-wrap: wrap; justify-content: space-around; max-width: 720px; margin: 60px 0 -50px 0;}
-.classcomp .standard2{ background: url(../Img/greenone.png) no-repeat top center/cover; width: 26px; height: 26px; }
-.classcomp .standard3{ background: url(../Img/greentwo.png) no-repeat top center/cover; width: 26px; height: 26px; }
+.classcomp .standard2{ background: #ff4081; width: 26px; height: 26px; border-radius:50%;}
+.classcomp .standard3{ background: #2962ff; width: 26px; height: 26px; border-radius:50%;}
 
 .dlasscoma {position: relative; width: 100%; display: flex; flex-wrap: wrap; justify-content: space-evenly; max-width: 720px;}
 .dlasscoma .left_arrow { background: url(../Img/left_arrow.png) no-repeat top center/cover; width: 76px; height: 76px;}
